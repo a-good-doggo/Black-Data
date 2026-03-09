@@ -1,0 +1,275 @@
+
+
+code
+Html
+play_circle
+download
+content_copy
+expand_less
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Data | Elite Cybersecurity Solutions</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #ff0000;
+            --dark-red: #8b0000;
+            --bg-black: #050505;
+            --card-bg: #111111;
+            --text-gray: #cccccc;
+            --pure-white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-black);
+            color: var(--pure-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .logo-text {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(0, 0, 0, 0.9);
+            border-bottom: 2px solid var(--primary-red);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 50px;
+            filter: drop-shadow(0 0 5px var(--primary-red));
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-red);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            border-bottom: 5px solid var(--primary-red);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px var(--primary-red);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            background: var(--primary-red);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 2px;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .btn:hover {
+            background: white;
+            color: var(--bg-black);
+            box-shadow: 0 0 20px white;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 8%;
+            text-align: center;
+        }
+
+        .section-title {
+            margin-bottom: 60px;
+            font-size: 2.5rem;
+        }
+
+        .section-title span {
+            color: var(--primary-red);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-left: 4px solid var(--primary-red);
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #1a1a1a;
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.1);
+        }
+
+        .card i {
+            font-size: 3rem;
+            color: var(--primary-red);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 50px 8%;
+            border-top: 1px solid #222;
+            text-align: center;
+        }
+
+        .footer-logo {
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .copyright {
+            color: #555;
+            font-size: 0.8rem;
+            margin-top: 20px;
+        }
+
+        /* Matrix Overlay Effect (Subtle) */
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15) 0px, rgba(0,0,0,0.15) 1px, transparent 1px, transparent 2px);
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            nav ul { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <!-- Ensure your image is named logo.png in the same folder -->
+            <img src="logo.png" alt="Black Data Logo" class="logo-img">
+            <span class="logo-text">Black Data</span>
+        </div>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>SECURE YOUR ASSETS</h1>
+        <p>Advanced penetration testing, threat intelligence, and digital forensics for the modern enterprise. We operate in the shadows to keep you in the light.</p>
+        <a href="#contact" class="btn">INITIALIZE PROTOCOL</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">OUR <span>CAPABILITIES</span></h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Vulnerability Assessment</h3>
+                <p>Deep-dive scans and manual testing to identify weak points before attackers do.</p>
+            </div>
+            <div class="card">
+                <h3>Incident Response</h3>
+                <p>Rapid deployment teams to neutralize threats and recover compromised data.</p>
+            </div>
+            <div class="card">
+                <h3>Managed Security</h3>
+                <p>24/7 monitoring of your network perimeter using Black Data proprietary tech.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="about" style="background: #0a0a0a;">
+        <h2 class="section-title">THE <span>MISSION</span></h2>
+        <p style="max-width: 800px; margin: 0 auto; color: var(--text-gray);">
+            Founded on the principles of absolute privacy and offensive security, Black Data provides elite protection for corporations and governments worldwide. Our team consists of industry veterans dedicated to staying ahead of global threat actors.
+        </p>
+    </section>
+
+    <footer id="contact">
+        <img src="logo.png" alt="Black Data Logo" class="footer-logo">
+        <h3>BLACK DATA</h3>
+        <p style="margin: 15px 0; color: var(--text-gray);">contact@blackdata.security</p>
+        <div class="copyright">
+            &copy; 2023 BLACK DATA CYBERSECURITY. ALL RIGHTS RESERVED. // ENCRYPTED CONNECTION ESTABLISHED.
+        </div>
+    </footer>
+
+</body>
+</html>
